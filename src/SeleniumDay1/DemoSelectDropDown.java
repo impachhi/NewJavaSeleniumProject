@@ -20,6 +20,9 @@ public class DemoSelectDropDown {
             Select sc = new Select(bday);
 //            Selection By Visible Text
             sc.selectByVisibleText("22");  //it will select 22 which is visible text need to give as input in the form of string
+          System.out.println(sc.getFirstSelectedOption().getText());
+           // second selection or multiple selection
+            sc.selectByValue("5");
            WebElement day_selected= sc.getFirstSelectedOption();
            System.out.println(day_selected.getText());
            WebElement bmonth=driver.findElement(By.name("birthday_month"));
