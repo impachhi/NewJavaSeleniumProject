@@ -25,6 +25,8 @@ public class DemoSelectDropDown2 {
             List<WebElement> availiableBdayMonths=sc1.getOptions();
             for(WebElement months:availiableBdayMonths){
                 System.out.println(months.getText());
+
+
             }
 
 
