@@ -3,6 +3,7 @@
 	<name>NewJavaSeleniumProject</name>
 	<comment></comment>
 	<projects>
+		<project>.git</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
