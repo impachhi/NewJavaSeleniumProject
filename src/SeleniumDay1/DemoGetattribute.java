@@ -15,17 +15,17 @@ public class DemoGetattribute {
 		
 			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 			ChromeOptions options=new ChromeOptions();
-			options.setHeadless(true);
+			options.setHeadless(true); // setting the browser headless ui will not appear 
 	        WebDriver driver= new ChromeDriver(options);
 	        
-	        driver.get("https://www.javatpoint.com/python-tutorial") ;
+	        driver.get("https://www.javatpoint.com/python-tutorial");
 	        System.out.println(driver.findElement(By.xpath("//h1[@class='h1']")).getText()); //Python Tutorial
 	        System.out.println(driver.findElement(By.xpath("//h1[@class='h1']")).getAttribute("value")); //null
 	        System.out.println(driver.findElement(By.xpath("//h1[@class='h1']")).getAttribute("textcontent")); //null
 	        System.out.println(driver.findElement(By.xpath("//h1[@class='h1']")).getAttribute("innerHTML"));  //Python Tutorial
+	      
 	        
-	        
-	        driver.quit();
+	        driver.close();
 	 
 	}
 	
